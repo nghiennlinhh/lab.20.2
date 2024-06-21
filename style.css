@@ -1,0 +1,123 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image:  linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*main layout*/
+
+main{
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.player{
+  width: 200px;
+  text-align: center;
+  padding: 30px 30px;
+  background-color: #efaec2;
+}
+.player--0{
+  /* background-color: #efaec2; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.player--1{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.name{
+  padding: 20px 20px;
+  font-size: 25px;
+}.score{
+  margin-bottom: 60px;
+  font-size: 45px;
+  color: #b82251;
+}
+.current{
+  padding:10px;
+  width: 70px;
+  background-color: #e90875;
+  border-radius: 5px;
+  margin-left: 35px;
+  color: white;
+}
+.current-label{
+  font-size: 12px;
+}
+.current-score{
+  font-size: 16px;
+}
+.newGame{
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  background-color: white;
+  border-radius: 40px;
+  text-align: center;
+  padding: 3px 5px;
+  border: none;
+}
+.dice{
+  position: absolute;
+  top: 100px;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 55px;
+  width: 55px;
+  border-radius: 8px;
+}
+.rollDice{
+  position: absolute;
+  width: 80px;
+  bottom: 62px;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  background-color: white;
+  border-radius: 40px;
+  text-align: center;
+  padding: 3px 5px;
+  border: none;
+}
+.hold{
+  position: absolute;
+  width: 70px;
+  bottom: 30px;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  background-color: white;
+  border-radius: 40px;
+  text-align: center;
+  padding: 3px 5px;
+  border: none;
+
+}
+.hidden{
+  display: none;
+
+}
+.player--active{
+  background-color: #c05b8b;
+}
+.player--winner  {
+  background-color: #2f2f2f;
+}
+
+
